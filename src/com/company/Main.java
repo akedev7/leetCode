@@ -14,7 +14,7 @@ public class Main {
         int[][] maze = {
                 {1, 0, 0, 0},
                 {1, 1, 1, 1},
-                {0, 0, 0, 2}
+                {0, 1, 0, 2}
         };
 
         Position startingPosition = new Position(0, 0);
@@ -79,6 +79,12 @@ public class Main {
                     paths.push(new Position(peekPosition.x, yRight));
                     continue;
                 }
+            }
+
+            paths.pop();
+            if (paths.size() <= 0) {
+                System.out.println("No path");
+                break;
             }
         }
     }
