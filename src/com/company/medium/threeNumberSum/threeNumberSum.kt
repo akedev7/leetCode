@@ -1,4 +1,4 @@
-package com.company.hard.threeNumberSum
+package com.company.medium.threeNumberSum
 
 fun main() {
     getThreeNumberSum(listOf(12, 3, 1, 2, -6, 5, -8, 6), 0)
