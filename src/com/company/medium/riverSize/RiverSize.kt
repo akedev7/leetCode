@@ -28,7 +28,7 @@ fun getRiverSizes(matrix: List<List<Int>>): List<Int> {
 
 typealias Coordinate = Pair<Int, Int>
 
-fun traverseGraph(i: Int, j: Int, matrix: List<List<Int>>, visitedMatrix: MutableList<MutableList<Boolean>>, resultList: MutableList<Int>) {
+private fun traverseGraph(i: Int, j: Int, matrix: List<List<Int>>, visitedMatrix: MutableList<MutableList<Boolean>>, resultList: MutableList<Int>) {
     var riverSize = 0
     val stack = Stack<Coordinate>() //For depthFirstSearch
     stack.add(Coordinate(i, j))
